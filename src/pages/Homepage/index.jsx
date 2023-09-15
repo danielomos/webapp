@@ -3,7 +3,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Input, Line, Text } from "components";
-import Header from "components/Header";
 
 import { handleSectionNavigation } from "utils";
 
@@ -15,11 +14,99 @@ const HomepagePage = () => {
       <div className="bg-white-A700 flex flex-col font-poppins sm:gap-10 md:gap-10 gap-[71px] items-center justify-center mx-auto w-auto sm:w-full md:w-full">
         <header
           className="bg-cover bg-no-repeat flex h-[233px] md:h-auto items-center justify-center md:px-5 w-full"
-          style={{ backgroundImage: "url('images/img_banner_gray_300.png')" }}
+          style={{
+            backgroundImage: "url('images/img_banner_gray_300_231x1920.png')",
+          }}
         >
-          <Header className="flex gap-[304px] items-center justify-center w-full" />
+          <header className="flex items-center justify-center w-full">
+            <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between w-full">
+              <div className="header-row my-1.5">
+                <div className="flex flex-row gap-[7px] items-center justify-start">
+                  <Img
+                    className="h-[63px] md:h-auto object-cover w-[63px]"
+                    src="images/img_icon11.png"
+                    alt="iconEleven"
+                  />
+                  <Text
+                    className="text-2xl md:text-[22px] text-deep_orange-600 sm:text-xl"
+                    size="txtPoppinsExtraBold24"
+                  >
+                    <span className="text-gray-900 font-poppins text-left font-extrabold">
+                      Revo{" "}
+                    </span>
+                    <span className="text-deep_orange-600 font-poppins text-left font-semibold">
+                      Energy
+                    </span>
+                  </Text>
+                </div>
+                <div className="mobile-menu">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div className="flex flex-1 flex-row gap-10 sm:hidden items-start justify-end max-w-[923px] w-full">
+                <ul className="bg-gray-50 flex flex-row font-poppins gap-2.5 sm:hidden items-center justify-center md:px-10 sm:px-5 px-[52px] py-6 rounded-[37px] w-auto common-row-list">
+                  <li>
+                    <a href="javascript:" className="text-gray-900_01 text-lg">
+                      <Text size="txtPoppinsMedium18">
+                        <span className="text-gray-900_01 font-nunito text-left font-semibold">
+                          Home
+                        </span>
+                        <span className="text-gray-900_01 font-jost text-left font-normal">
+                          
+                        </span>
+                        <span className="text-gray-900_01 font-poppins text-left font-medium">
+                          {" "}
+                        </span>
+                      </Text>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:" className="text-gray-900_01 text-lg">
+                      <Text size="txtPoppinsMedium18">
+                        <span className="text-gray-900_01 font-nunito text-left font-semibold">
+                          Our Story
+                        </span>
+                        <span className="text-gray-900_01 font-jost text-left font-normal">
+                          
+                        </span>
+                        <span className="text-gray-900_01 font-poppins text-left font-medium">
+                          {" "}
+                        </span>
+                      </Text>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:" className="text-gray-900_01 text-lg">
+                      <Text size="txtPoppinsMedium18">
+                        <span className="text-gray-900_01 font-nunito text-left font-semibold">
+                          Contact
+                        </span>
+                        <span className="text-gray-900_01 font-jost text-left font-normal">
+                          
+                        </span>
+                        <span className="text-gray-900_01 font-poppins text-left font-medium">
+                          {" "}
+                        </span>
+                      </Text>
+                    </a>
+                  </li>
+                </ul>
+                <Button
+                  className="cursor-pointer font-bold font-nunito leading-[normal] min-w-[206px] text-center text-lg"
+                  shape="round"
+                  color="deep_orange_600"
+                  size="xs"
+                  variant="fill"
+                >
+                  Get Started
+                </Button>
+              </div>
+            </div>
+          </header>
         </header>
-        <div className="flex md:flex-col flex-row font-nunito md:gap-10 gap-[101px] items-center justify-start max-w-[1721px] mx-auto md:px-5 w-full">
+        <div className="flex md:flex-col flex-row font-nunito md:gap-10 gap-[101px] items-center justify-center max-w-[1721px] mx-auto md:px-5 w-full">
           <div className="flex md:flex-1 flex-col items-center justify-start w-[36%] md:w-full">
             <div className="flex flex-col gap-12 items-center justify-center w-[615px] md:w-full">
               <div className="flex flex-col items-center justify-center w-auto md:w-full">
@@ -86,7 +173,7 @@ const HomepagePage = () => {
           <Img
             className="md:flex-1 h-[551px] sm:h-auto object-cover rounded-[15px] w-[1010px] md:w-full"
             src="images/img_image2.png"
-            alt="imagetwo"
+            alt="imageTwo"
           />
         </div>
         <div
@@ -184,11 +271,11 @@ const HomepagePage = () => {
           </div>
         </div>
         <footer className="flex font-nunito items-center justify-center md:px-5 w-full">
-          <div className="flex flex-col gap-[51px] items-center justify-center w-[96%] md:w-full">
-            <div className="flex flex-col md:gap-10 gap-[154px] items-center justify-start max-w-[1424px] w-full">
-              <Line className="bg-gray-300 h-px w-[99%]" />
+          <div className="flex flex-col gap-[51px] items-center justify-center w-full">
+            <div className="flex flex-col md:gap-10 gap-[154px] items-center justify-start max-w-[1482px] w-full">
+              <Line className="bg-gray-300 h-px w-[95%]" />
               <div
-                className="common-pointer flex md:flex-col flex-row gap-[58px] items-center justify-center max-w-[1424px] w-full"
+                className="common-pointer flex md:flex-col flex-row gap-[58px] items-center justify-center max-w-[1473px] w-full"
                 id="block1"
                 onClick={() => {
                   handleSectionNavigation("block1");
@@ -200,7 +287,7 @@ const HomepagePage = () => {
                       <Img
                         className="h-[63px] md:h-auto object-cover w-[63px]"
                         src="images/img_icon11.png"
-                        alt="iconelevenone"
+                        alt="iconEleven_One"
                       />
                       <Text
                         className="text-2xl md:text-[22px] text-deep_orange-600 sm:text-xl"
