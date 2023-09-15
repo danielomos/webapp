@@ -1,10 +1,14 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import { Button, Img, Text } from "components";
 
 import { handleSectionNavigation } from "utils";
 
-const Header = (props) => {
+const Header2 = (props) => {
+  const navigate = useNavigate();
+
   return (
     <>
       <header className={props.className}>
@@ -34,12 +38,13 @@ const Header = (props) => {
               <div></div>
             </div>
           </div>
-          <div className="flex flex-1 flex-row gap-10 sm:hidden items-start justify-end max-w-[923px] w-full">
+          <div className="flex flex-1 flex-row gap-10 sm:hidden items-center justify-center max-w-[923px] w-full">
             <ul className="bg-gray-50 flex flex-row gap-2.5 sm:hidden items-center justify-center md:px-10 sm:px-5 px-[52px] py-6 rounded-[37px] w-auto common-row-list">
               <li>
                 <Text
-                  className="text-gray-900_01 text-lg"
+                  className="common-pointer text-gray-900_01 text-lg"
                   size="txtPoppinsMedium18"
+                  onClick={() => navigate("/homepage")}
                 >
                   <span className="text-gray-900_01 font-nunito text-left font-semibold">
                     Home
@@ -54,11 +59,8 @@ const Header = (props) => {
               </li>
               <li>
                 <Text
-                  className="common-pointer text-gray-900_01 text-lg"
+                  className="text-gray-900_01 text-lg"
                   size="txtPoppinsMedium18"
-                  onClick={() => {
-                    handleSectionNavigation("block4");
-                  }}
                 >
                   <span className="text-gray-900_01 font-nunito text-left font-semibold">
                     Our Story
@@ -73,8 +75,11 @@ const Header = (props) => {
               </li>
               <li>
                 <Text
-                  className="text-gray-900_01 text-lg"
+                  className="common-pointer text-gray-900_01 text-lg"
                   size="txtPoppinsMedium18"
+                  onClick={() => {
+                    handleSectionNavigation("block1");
+                  }}
                 >
                   <span className="text-gray-900_01 font-nunito text-left font-semibold">
                     Contact
@@ -104,6 +109,6 @@ const Header = (props) => {
   );
 };
 
-Header.defaultProps = {};
+Header2.defaultProps = {};
 
-export default Header;
+export default Header2;

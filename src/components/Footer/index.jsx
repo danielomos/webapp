@@ -6,10 +6,10 @@ const Footer = (props) => {
   return (
     <>
       <footer className={props.className}>
-        <div className="flex flex-col gap-[51px] items-center justify-center w-[96%] md:w-full">
-          <div className="flex flex-col md:gap-10 gap-[154px] items-center justify-start max-w-[1424px] w-full">
-            <Line className="bg-gray-300 h-px w-[99%]" />
-            <div className="flex md:flex-col flex-row gap-[58px] items-center justify-center max-w-[1424px] w-full">
+        <div className="flex flex-col gap-[51px] items-center justify-center w-full">
+          <div className="flex flex-col md:gap-10 gap-[154px] items-center justify-start max-w-[1482px] w-full">
+            <Line className="bg-gray-300 h-px w-[95%]" />
+            <div className="flex md:flex-col flex-row gap-[58px] items-center justify-center max-w-[1473px] w-full">
               <div className="flex flex-col gap-9 items-start justify-start w-[366px]">
                 <div className="flex flex-col gap-[26px] items-start justify-start w-[366px]">
                   <div className="flex flex-row gap-[7px] items-center justify-start w-[61%] md:w-full">
@@ -121,7 +121,7 @@ const Footer = (props) => {
                     size="xs"
                     variant="outline"
                   >
-                    <div className="font-bold font-nunito leading-[normal] text-left text-lg">
+                    <div className="!text-gray-900_01 font-bold font-nunito leading-[normal] text-left text-lg">
                       Play Store
                     </div>
                   </Button>
