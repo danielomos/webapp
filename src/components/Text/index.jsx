@@ -15,8 +15,8 @@ const sizeClasses = {
   txtNunitoBold18DeeppurpleA400: "font-bold font-nunito",
   txtPoppinsExtraBold24: "font-extrabold font-poppins",
   txtNunitoBold40: "font-bold font-nunito",
-  txtNunitoBold30: "font-bold font-nunito",
   txtPoppinsMedium18: "font-medium font-poppins",
+  txtNunitoBold30: "font-bold font-nunito",
   txtKumbhSansRegular16: "font-kumbhsans font-normal",
 };
 

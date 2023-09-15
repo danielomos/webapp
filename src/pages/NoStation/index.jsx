@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Button, Img, Input, Line, Text } from "components";
-import Footer from "components/Footer";
+import Footer1 from "components/Footer1";
 import Header from "components/Header";
 
 const NoStationPage = () => {
@@ -13,7 +13,7 @@ const NoStationPage = () => {
             <div className="flex flex-col gap-[52px] items-center justify-start w-full">
               <Img
                 className="h-[231px] w-[1920px]"
-                src="images/img_banner_gray_300_231x1920.svg"
+                src="images/img_banner_gray_300.svg"
                 alt="banner"
               />
               <div className="flex flex-col items-center justify-center max-w-[845px] w-full">
@@ -59,7 +59,7 @@ const NoStationPage = () => {
                           variant="fill"
                         ></Input>
                         <Input
-                          name="buttonone"
+                          name="button_One"
                           placeholder="Enter Your email Address"
                           className="leading-[normal] lowercase p-0 placeholder:text-gray-600 text-left text-xl w-full"
                           wrapClassName="border border-blue_gray-100 border-solid w-full"
@@ -70,7 +70,7 @@ const NoStationPage = () => {
                           variant="fill"
                         ></Input>
                         <Input
-                          name="buttontwo"
+                          name="button_Two"
                           placeholder="Enter Your Phone number"
                           className="leading-[normal] lowercase p-0 placeholder:text-gray-600 text-left text-xl w-full"
                           wrapClassName="border border-blue_gray-100 border-solid w-full"
@@ -103,7 +103,7 @@ const NoStationPage = () => {
             <Header className="flex gap-[304px] items-center justify-center mb-[584px] mr-[63px] w-full" />
           </div>
         </div>
-        <Footer className="flex gap-[51px] items-center justify-center md:px-5 w-full" />
+        <Footer1 className="flex gap-[51px] items-center justify-center md:px-5 w-full" />
       </div>
     </>
   );

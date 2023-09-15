@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Button, Img, Input, Line, List, Text } from "components";
-import Footer from "components/Footer";
+import Footer1 from "components/Footer1";
 import Header from "components/Header";
 
 const StationDetailsPage = () => {
@@ -13,13 +13,13 @@ const StationDetailsPage = () => {
             <div className="flex flex-col md:gap-10 gap-[255px] justify-start w-full">
               <Header className="flex gap-[304px] items-center justify-center md:ml-[0] ml-[90px] w-full" />
               <div className="flex md:flex-col flex-row font-nunito md:gap-10 gap-[93px] items-start justify-center max-w-[1581px] mr-[29px] w-full">
-                <div className="flex md:flex-1 flex-col gap-4 items-center justify-start w-[606px] md:w-full">
+                <div className="flex md:flex-1 flex-col gap-4 items-center justify-center w-[606px] md:w-full">
                   <div className="flex sm:flex-col flex-row gap-3.5 items-center justify-center w-[548px] sm:w-full">
                     <div className="bg-white-A700 flex flex-col h-[111px] items-end justify-end p-[19px] rounded-[20px] w-[111px]">
                       <Img
                         className="h-[63px] md:h-auto mt-2 object-cover w-[63px]"
                         src="images/img_icon11.png"
-                        alt="iconelevenone"
+                        alt="iconEleven_One"
                       />
                     </div>
                     <Text
@@ -36,7 +36,7 @@ const StationDetailsPage = () => {
                     0000.00
                   </Text>
                 </div>
-                <div className="flex flex-1 flex-col gap-[39px] items-start justify-start max-w-[834px] w-full">
+                <div className="flex flex-1 flex-col gap-[39px] items-center justify-center max-w-[834px] w-full">
                   <List
                     className="flex flex-col gap-[39px] items-center w-full"
                     orientation="vertical"
@@ -94,7 +94,7 @@ const StationDetailsPage = () => {
                       </div>
                     </div>
                   </List>
-                  <div className="border border-gray-400 border-solid flex flex-col items-center justify-start max-w-[833px] md:px-10 sm:px-5 px-[66px] py-[62px] rounded-[30px] w-full">
+                  <div className="border border-gray-400 border-solid flex flex-col items-center justify-center max-w-[833px] md:px-10 sm:px-5 px-[66px] py-[62px] rounded-[30px] w-full">
                     <div className="flex flex-col gap-[46px] items-center justify-center w-full">
                       <div className="flex flex-col gap-4 items-start justify-start w-[504px] sm:w-full">
                         <Text
@@ -131,7 +131,7 @@ const StationDetailsPage = () => {
             alt="backgroundpatte"
           />
         </div>
-        <Footer className="flex font-nunito gap-[51px] items-center justify-center w-full" />
+        <Footer1 className="flex font-nunito gap-[51px] items-center justify-center w-full" />
       </div>
     </>
   );
