@@ -3,9 +3,7 @@ import PropTypes from "prop-types";
 
 const shapes = { round: "rounded-[37px]" };
 const variants = {
-  outline: {
-    blue_gray_100: "border border-blue_gray-100 border-solid text-gray-900_01",
-  },
+  outline: { blue_gray_100: "border border-blue_gray-100 border-solid" },
   fill: {
     gray_900_01: "bg-gray-900_01 text-white-A700",
     deep_orange_600: "bg-deep_orange-600 text-white-A700",

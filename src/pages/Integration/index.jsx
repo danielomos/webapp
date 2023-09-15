@@ -5,8 +5,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { getStationNearby } from "service/api";
 
 import { Button, Img, Input, Line, Text } from "components";
-import Footer1 from "components/Footer1";
-import Header from "components/Header";
+import Footer from "components/Footer";
+import Header2 from "components/Header2";
 
 const IntegrationPage = () => {
   const [nearData, setNearData] = React.useState();
@@ -34,12 +34,12 @@ const IntegrationPage = () => {
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-poppins sm:gap-10 md:gap-10 gap-[62px] items-center justify-center mx-auto w-auto sm:w-full md:w-full">
-        <header
-          className="bg-cover bg-no-repeat flex flex-col h-[228px] items-center justify-center md:px-5 w-full"
-          style={{ backgroundImage: "url('images/img_group66.svg')" }}
-        >
-          <Header className="flex gap-[304px] items-center justify-center mb-[93px] md:ml-[0] ml-[260px] mr-[140px] mt-[60px] w-full" />
-        </header>
+        <Header2 className="flex gap-[304px] items-center justify-center md:px-5 py-20 w-full" />
+        <Img
+          className="h-[37px] w-[1920px]"
+          src="images/img_group42981.svg"
+          alt="group42982"
+        />
         <div className="flex flex-col font-kumbhsans items-center justify-center max-w-[754px] md:px-5 w-full">
           <Text
             className="md:text-5xl text-[64px] text-blue_gray-800 text-center tracking-[-0.64px] w-auto"
@@ -104,7 +104,7 @@ const IntegrationPage = () => {
             })}
           </div>
         </div>
-        <Footer1 className="flex font-nunito gap-[51px] items-center justify-center md:px-5 w-full" />
+        <Footer className="flex font-nunito gap-[51px] items-center justify-center md:px-5 w-full" />
       </div>
     </>
   );

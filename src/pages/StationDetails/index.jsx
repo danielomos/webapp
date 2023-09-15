@@ -1,18 +1,23 @@
 import React from "react";
 
 import { Button, Img, Input, Line, List, Text } from "components";
-import Footer1 from "components/Footer1";
-import Header from "components/Header";
+import Footer from "components/Footer";
+import Header2 from "components/Header2";
 
 const StationDetailsPage = () => {
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-poppins sm:gap-10 md:gap-10 gap-[255px] items-center justify-center mx-auto md:px-10 sm:px-5 px-[77px] py-[60px] w-auto sm:w-full md:w-full">
-        <div className="relative w-full">
-          <div className="flex flex-col items-center justify-start mt-auto mx-auto w-[93%]">
-            <div className="flex flex-col md:gap-10 gap-[255px] justify-start w-full">
-              <Header className="flex gap-[304px] items-center justify-center md:ml-[0] ml-[90px] w-full" />
-              <div className="flex md:flex-col flex-row font-nunito md:gap-10 gap-[93px] items-start justify-center max-w-[1581px] mr-[29px] w-full">
+      <div className="bg-white-A700 flex flex-col font-poppins sm:gap-10 md:gap-10 gap-[62px] items-center justify-center mx-auto w-auto sm:w-full md:w-full">
+        <div className="md:px-5 relative w-full">
+          <div className="flex flex-col items-center justify-start m-auto w-full">
+            <div className="flex flex-col md:gap-10 gap-[62px] items-center justify-start w-full">
+              <Header2 className="flex gap-[304px] items-center justify-center py-20 w-full" />
+              <Img
+                className="h-[37px] w-[1920px]"
+                src="images/img_group42981.svg"
+                alt="group42982"
+              />
+              <div className="flex md:flex-col flex-row font-nunito md:gap-10 gap-[93px] items-start justify-center max-w-[1581px] w-full">
                 <div className="flex md:flex-1 flex-col gap-4 items-center justify-center w-[606px] md:w-full">
                   <div className="flex sm:flex-col flex-row gap-3.5 items-center justify-center w-[548px] sm:w-full">
                     <div className="bg-white-A700 flex flex-col h-[111px] items-end justify-end p-[19px] rounded-[20px] w-[111px]">
@@ -126,12 +131,12 @@ const StationDetailsPage = () => {
             </div>
           </div>
           <Img
-            className="absolute h-[809px] inset-x-[0] mx-auto object-cover top-[0] w-[1733px]"
+            className="absolute h-[809px] inset-x-[0] mx-auto object-cover top-[0] w-[1918px]"
             src="images/img_banner.png"
             alt="backgroundpatte"
           />
         </div>
-        <Footer1 className="flex font-nunito gap-[51px] items-center justify-center w-full" />
+        <Footer className="flex font-nunito gap-[51px] items-center justify-center md:px-5 w-full" />
       </div>
     </>
   );

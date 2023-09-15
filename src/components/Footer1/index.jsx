@@ -121,7 +121,7 @@ const Footer1 = (props) => {
                     size="xs"
                     variant="outline"
                   >
-                    <div className="font-bold font-nunito leading-[normal] text-left text-lg">
+                    <div className="!text-gray-900_01 font-bold font-nunito leading-[normal] text-left text-lg">
                       Play Store
                     </div>
                   </Button>
